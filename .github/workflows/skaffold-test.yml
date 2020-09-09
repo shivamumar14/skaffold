@@ -17,5 +17,6 @@ jobs:
         uses: hiberbee/github-action-skaffold@latest
         with:
           command: build
+          skaffold-version: 1.14.0 
           filename: examples/getting-started/skaffold.yaml
           
