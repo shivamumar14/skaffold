@@ -18,6 +18,6 @@ jobs:
         with:
           command: build
           skaffold-version: 1.14.0 
-          filename: examples/getting-started/skaffold.yaml
-          working-directory:  ./examples/getting-started/
+          filename: examples/structure-tests/skaffold.yaml
+          
           
