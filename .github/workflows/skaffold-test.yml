@@ -9,18 +9,16 @@ on:
 jobs:
   Structure_Test:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./examples/structure-tests/
-
+    
     steps:
       - uses: actions/checkout@v2
-
+      - name: folder
+        run: cd examples/structure-tests/
       - name: Skaffold Build for sample
         uses: hiberbee/github-action-skaffold@latest
         with:
           command: build
           skaffold-version: 1.14.0 
-          filename: examples/structure-tests/skaffold.yaml
+          filename: skaffold.yaml
           
           
