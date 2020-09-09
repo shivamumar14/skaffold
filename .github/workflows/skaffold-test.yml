@@ -9,6 +9,9 @@ on:
 jobs:
   Structure_Test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./examples/structure-tests
 
     steps:
       - uses: actions/checkout@v2
@@ -18,6 +21,6 @@ jobs:
         with:
           command: build
           skaffold-version: 1.14.0 
-          filename: examples/structure-tests/skaffold.yaml
+          filename: skaffold.yaml
           
           
